@@ -1,0 +1,45 @@
+.two-part-image {
+    width: 100%;
+    min-height: 265px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: -15px;
+}
+
+.two-part-text {
+    display: flex;
+    flex-direction: column;
+    h3 {
+        font-size: 25px;
+        color: #1a6692;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    p {
+        font-size: 17px;
+        color: #626364;
+        margin-bottom: 45px;
+    }
+}
+
+.avo-button {
+    display: flex;
+    justify-content: flex-end;
+    .avocado-button {
+        width: 145px;
+        height: 45px;
+        padding: 10px 30px;
+        margin-top: 35px;
+        color: #626364;
+        font-size: 17px;
+        border: 1px solid #626364;
+        background-color: white;
+    }
+    .avocado-button:hover {
+        color: white;
+        background-color: #626364;
+        transition: 1s;
+    }
+}

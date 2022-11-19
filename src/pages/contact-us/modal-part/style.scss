@@ -1,0 +1,19 @@
+.modal-box {
+    width: 620px;
+    height: 55px;
+    padding: 10px 15px 6px;
+    border: 1px solid #626364;
+    margin: 17px 0px;
+    display: flex;
+    .modal-title {
+        color: #626364;
+        font-size: 19px;
+    }
+    .modal-title::after {
+        content: '<';
+        font-size: 23px;
+        font-weight: 400;
+        color: #626364;
+        margin-left: 25px;
+    }
+}

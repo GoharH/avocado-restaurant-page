@@ -1,0 +1,41 @@
+.category-buttons {
+    margin-bottom: 20px;
+    ul {
+        display: flex;
+        justify-content: center;
+    }
+    li {
+        min-width: 117px;
+        // background-color: #2f956d;
+        background-color: transparent;
+        border: 1px solid #2f956d;
+        margin: 7px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+    li:hover {
+        background-color: #2f956d;
+        transition: .3s;
+    }
+    li:hover a {
+        color: white;
+        transition: .3s;
+    }
+    a {
+        font-size: 17px;
+        color: #2f956d;
+        padding: 10px 30px;
+    }
+}
+
+.menu-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+
+.avocado-part {
+    display: flex;
+    margin: 60px 0px 45px;
+}

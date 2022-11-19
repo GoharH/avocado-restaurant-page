@@ -1,0 +1,38 @@
+.stuff-image {
+    width: 160px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.stuff-main {
+    margin-left: 10px;
+    h3 {
+        font-size: 25px;
+        font-weight: 300;
+        color: #0099CC;
+    }
+    .stuff-position {
+        font-size: 20px;
+        color: #C39;
+        margin: 10px 0px 20px;
+    }
+    .stuff-direct {
+        max-width: 330px;
+        width: 100%;
+        font-size: 17px;
+        color: #626364;
+        margin-bottom: 15px;
+    }
+    .stuff-icons {
+        .stuff-icon {
+            width: 20px;
+            height: 20px;
+            display: block;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 10px;
+        }
+    }
+}

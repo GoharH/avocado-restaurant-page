@@ -1,0 +1,12 @@
+.stuff-icons {
+    display: flex;
+    .stuff-icon {
+        width: 20px;
+        height: 20px;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 10px;
+    }
+}

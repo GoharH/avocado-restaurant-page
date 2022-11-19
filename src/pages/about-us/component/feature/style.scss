@@ -1,0 +1,29 @@
+.feature-part {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .feature-img {
+        width: 80px;
+        height: 80px;
+        display: block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    p {
+        font-size: 17px;
+        color: #626364;
+        text-align: center;
+        margin: 50px 0px;
+    }
+    .feature-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button {
+            width: 141px;
+            height: 41px;
+            color: white;
+        }
+    }
+}
