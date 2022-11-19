@@ -15,7 +15,6 @@ class ContactUs extends React.Component {
             {
                 title: '1. Fusce eu lorem et dui #09C maximus varius?',
                 text: '#666 Duis blandit purus vel nenenatis rutrum. Pellentesque pellentesque tindicunt lorem, ac egestas massa sollicitudin vel. Nam scelerisque vulputate quam mollis pretium. Morbi condimentum volutpat.',
-                hidden: true
             },
             {
                 title: '2. Vestibulum #999 ante ipsum primis in faucibus orci?',
@@ -85,8 +84,7 @@ class ContactUs extends React.Component {
                     {this.state.modalList.map((item, index) => {
                         return <ModalPart
                             key={index}
-                            box={item}>
-                            <p className="modal-hidden-text">{item.text}</p>
+                            box={item}                        >
                         </ModalPart>
                     })}
                 </div>
