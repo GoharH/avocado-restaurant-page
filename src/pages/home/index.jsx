@@ -73,18 +73,20 @@ class Home extends React.Component {
             },
         ],
         filteredProducts: [],
-        activeTab: 'All'
+        activeTab: 'all'
     }
 
-    componentDidMount() {
-        this.selectProduct(this.state.activeTab)
-    }
+    // componentDidMount() {
+    //     this.selectProduct(this.state.activeTab)
+    // }
     selectProduct = (productName) => {
         let newCategory = []
-        if (productName !== 'All') {
+        if (productName !== 'all') {
             newCategory = this.state.menuList.filter(x => x.category === productName)
+            //console.log(newCategory)
         } else {
             newCategory = this.state.menuList
+            // tpum e bolory
         }
         this.setState({ filteredProducts: newCategory, activeTab: productName })
     }
@@ -97,21 +99,18 @@ class Home extends React.Component {
                             description="Total 3 HTML pages are included in this template. Header image has a parallax effect. You can feel free to download, edit and use this TemplateMo layout for your commercial or non-commercial websites." />
                         <div className="category-buttons">
                             <ul>
-                                <li className={`${this.state.activeTab === 'All' ? 'active' : ''}`}
-                                    onClick={() => this.selectProduct('All')}>
-                                    <a href="">All</a>
+                                <li className={`${this.state.activeTab === 'all' ? 'active' : ''}`}
+                                    onClick={() => this.selectProduct('all')}>All
+                                    {/* <a href="">All</a> */}
                                 </li>
-                                <li className={`${this.state.activeTab === 'Pizza' ? 'active' : ''}`}
-                                    onClick={() => this.selectProduct('Pizza')}>
-                                    <a href="">Pizza</a>
+                                <li className={`${this.state.activeTab === 'pizza' ? 'active' : ''}`}
+                                    onClick={() => this.selectProduct('pizza')}>Pizza
                                 </li>
-                                <li className={`${this.state.activeTab === 'Salad' ? 'active' : ''}`}
-                                    onClick={() => this.selectProduct('Salad')}>
-                                    <a href="">Salad</a>
+                                <li className={`${this.state.activeTab === 'salad' ? 'active' : ''}`}
+                                    onClick={() => this.selectProduct('salad')}>Salad
                                 </li>
-                                <li className={`${this.state.activeTab === 'Noodle' ? 'active' : ''}`}
-                                    onClick={() => this.selectProduct('Noodle')}>
-                                    <a href="">Noodle</a>
+                                <li className={`${this.state.activeTab === 'noodle' ? 'active' : ''}`}
+                                    onClick={() => this.selectProduct('noodle')}>Noodle
                                 </li>
                             </ul>
                         </div>

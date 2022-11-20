@@ -1,3 +1,4 @@
+@import '../../assets/style/variables.scss';
 .stuff-list {
     display: flex;
     flex-wrap: wrap;
@@ -34,13 +35,13 @@
     flex-direction: column;
     h3 {
         font-size: 25px;
-        color: #1a6692;
+        color: $blue-u;
         font-weight: 300;
         margin-bottom: 15px;
     }
     p {
         font-size: 17px;
-        color: #626364;
+        color: $light-grey;
         margin-bottom: 45px;
     }
 }

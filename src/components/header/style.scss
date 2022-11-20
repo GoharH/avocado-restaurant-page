@@ -49,6 +49,9 @@
         margin: 0px 15px;
         font-size: 18px;
     }
+    li .active {
+        border-bottom: 1px solid white;
+    }
     a {
         color: white;
     }

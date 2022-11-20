@@ -1,19 +1,20 @@
+@import '../../../assets/style/variables.scss';
 .modal-box {
     width: 620px;
     height: 55px;
     padding: 10px 15px 6px;
-    border: 1px solid #626364;
+    border: 1px solid $light-grey;
     margin: 17px 0px;
     display: flex;
     .modal-title {
-        color: #626364;
+        color: $light-grey;
         font-size: 19px;
     }
     .modal-title::after {
         content: '<';
         font-size: 23px;
         font-weight: 400;
-        color: #626364;
+        color: $light-grey;
         margin-left: 25px;
     }
 }

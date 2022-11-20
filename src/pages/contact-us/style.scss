@@ -1,3 +1,4 @@
+@import '../../assets/style/variables.scss';
 .input-part {
     margin-right: 55px;
     input,
@@ -16,11 +17,13 @@
         width: 97px;
         height: 38px;
         padding: 10px 30px;
-        background-color: #319966;
+        background-color: $green;
         display: flex;
+        align-items: center;
+        justify-content: center;
         button {
-            background-color: #319966;
-            color: white;
+            background-color: $green;
+            color: $white;
         }
     }
 }
@@ -28,20 +31,20 @@
 .address-part {
     h3 {
         font-size: 26px;
-        color: #319966;
+        color: $green;
         font-weight: 300;
         margin-bottom: 30px;
     }
     .address-text {
         font-size: 17px;
-        color: #626364;
+        color: $light-grey;
         max-width: 315px;
         width: 100%;
         margin-bottom: 50px;
     }
     .contact-link a {
         font-size: 17px;
-        color: #626364;
+        color: $light-grey;
         margin-bottom: 10px;
     }
     span {
@@ -72,7 +75,7 @@
         width: 100%;
         margin-left: 15px;
         margin-top: -13px;
-        color: #626364;
+        color: $light-grey;
     }
 }
 

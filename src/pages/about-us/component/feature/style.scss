@@ -1,3 +1,4 @@
+@import '../../../../assets/style/variables.scss';
 .feature-part {
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@
     }
     p {
         font-size: 17px;
-        color: #626364;
+        color: $light-grey;
         text-align: center;
         margin: 50px 0px;
     }
@@ -23,7 +24,7 @@
         button {
             width: 141px;
             height: 41px;
-            color: white;
+            color: $white;
         }
     }
 }
