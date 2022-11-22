@@ -76,9 +76,9 @@ class Home extends React.Component {
         activeTab: 'all'
     }
 
-    // componentDidMount() {
-    //     this.selectProduct(this.state.activeTab)
-    // }
+    componentDidMount() {
+        this.selectProduct(this.state.activeTab)
+    }
     selectProduct = (productName) => {
         let newCategory = []
         if (productName !== 'all') {
@@ -115,7 +115,7 @@ class Home extends React.Component {
                             </ul>
                         </div>
                         <div className="menu-list">
-                            {this.state.menuList.map((item, index) => {
+                            {this.state.filteredProducts.map((item, index) => {
                                 return <HomeMenuList key={index}
                                     box={item}>
                                 </HomeMenuList>
